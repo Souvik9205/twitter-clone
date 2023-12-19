@@ -1,13 +1,13 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Layout from '@/components/Layout'
-import Modal from '@/components/Modal'
 import { LayoutRouter } from 'next/dist/server/app-render/entry-base'
+import LoginModal from '@/components/Modals/LoginModal'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Modal  /> 
+      <LoginModal />
       <Layout>
       <Component {...pageProps} />
       </Layout>
